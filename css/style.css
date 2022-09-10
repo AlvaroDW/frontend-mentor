@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Montserrat';
+    /*src: url('https://fonts.google.com/specimen/Montserrat');*/
+    src: url('/fonts/Montserrat/Montserrat-VariableFont_wght');
+    font-weight: 500, 700;
+}
+
+@font-face {
+    font-family: 'Fraunces';
+    /*src: url('https://fonts.google.com/specimen/Fraunces');*/
+    src: url('/fonts/Fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght');
+    font-weight: 700;
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding: 5px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+h4.product-category {
+    font-family: 'Montserrat';
+}
+
+p {
+    font-size: 14px;
+}
+
+img {
+    height: 50vh;
+    border-radius: 10px 0px 0px 10px;
+}
+
+button {
+    padding: 12px 64px;
+    /*background-color: hsl(155, 32%, 38%);*/
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.main-container {
+    background-color: hsl(30, 38%, 92%);
+    padding-top: 150px;
+    /*width: 90vw;*/
+    width: 100vw;
+    /*height: 60vh;*/
+    height: 100vh;
+    border-radius: 5px;
+    /*margin: 0 auto;*/
+}
+
+.inner-container {
+    display: flex;
+    background-color: white;
+    width: 41vw;
+    height: 50vh;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.divDescription {
+    display: flex;
+    flex-flow: column;
+    margin: 30px;
+    justify-content: space-around;
+
+}
+
+.divButton {
+    display: flex;
+    justify-content: center;
+}
