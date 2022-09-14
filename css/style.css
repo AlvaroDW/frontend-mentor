@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'Montserrat';
     /*src: url('https://fonts.google.com/specimen/Montserrat');*/
-    src: url('/fonts/Montserrat/Montserrat-VariableFont_wght');
+    src: url('fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
     font-weight: 500, 700;
 }
 
 @font-face {
     font-family: 'Fraunces';
     /*src: url('https://fonts.google.com/specimen/Fraunces');*/
-    src: url('/fonts/Fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght');
+    src: url('fonts/Fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf');
     font-weight: 700;
 }
 
@@ -26,10 +26,38 @@
 
 h4.product-category {
     font-family: 'Montserrat';
+    letter-spacing: 10px;
+    color: rgb(165, 165, 165);
+
+}
+
+div.product-category {
+    font-family: 'Montserrat';
+    letter-spacing: 5px;
+    color: rgb(126, 126, 126);
+    font-weight: bolder;
+    font-size: .8em;
+
+}
+
+.product-title {
+    font-family: 'Fraunces';
+    inline-size: 7em;
+    display: inline-block;
+    line-height: 100%;
+
+
+
 }
 
 p {
-    font-size: 14px;
+    font-size: 1em;
+    inline-size: 16em;
+    margin-top: 0;
+    font-family: 'Montserrat';
+    color: rgb(90, 90, 90);
+    line-height: 1.5em;
+
 }
 
 img {
@@ -44,6 +72,8 @@ button {
     border: none;
     color: white;
     border-radius: 5px;
+    font-family: 'Montserrat';
+    font-weight: bold;
 }
 
 .main-container {
@@ -60,21 +90,35 @@ button {
 .inner-container {
     display: flex;
     background-color: white;
-    width: 41vw;
+    width: 47vw;
     height: 50vh;
     margin: 0 auto;
     border-radius: 10px;
 }
 
+
+
 .divDescription {
     display: flex;
     flex-flow: column;
-    margin: 30px;
-    justify-content: space-around;
-
+    margin: 34px;
+    justify-content: flex-start;
+    min-width: auto;
 }
 
 .divButton {
     display: flex;
     justify-content: center;
+}
+
+span {
+    display: inline-block;
+    margin-bottom: 45px;
+    margin-top: 10px;
+}
+
+span:nth-child(1) {
+    font-family: 'Fraunces';
+    color: hsl(158, 36%, 37%);
+    font-size: 1.8em;
 }
