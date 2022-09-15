@@ -51,7 +51,7 @@ div.product-category {
 }
 
 p {
-    font-size: 1em;
+    font-size: .9em;
     inline-size: 16em;
     margin-top: 0;
     font-family: 'Montserrat';
@@ -61,12 +61,12 @@ p {
 }
 
 img {
-    height: 50vh;
+    height: 47vh;
     border-radius: 10px 0px 0px 10px;
 }
 
 button {
-    padding: 12px 64px;
+    padding: 16px 64px;
     /*background-color: hsl(155, 32%, 38%);*/
     background-color: hsl(158, 36%, 37%);
     border: none;
@@ -74,6 +74,8 @@ button {
     border-radius: 5px;
     font-family: 'Montserrat';
     font-weight: bold;
+    display: flex;
+    column-gap: 11px;
 }
 
 .main-container {
@@ -90,8 +92,8 @@ button {
 .inner-container {
     display: flex;
     background-color: white;
-    width: 47vw;
-    height: 50vh;
+    width: 45vw;
+    height: 47vh;
     margin: 0 auto;
     border-radius: 10px;
 }
@@ -106,19 +108,35 @@ button {
     min-width: auto;
 }
 
+.product-price {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 17px;
+}
+
 .divButton {
     display: flex;
-    justify-content: center;
+    justify-content: left;
+
 }
 
 span {
     display: inline-block;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
     margin-top: 10px;
 }
 
 span:nth-child(1) {
     font-family: 'Fraunces';
     color: hsl(158, 36%, 37%);
-    font-size: 1.8em;
+    font-size: 2em;
+}
+
+span:nth-child(2) {
+    font-family: 'Montserrat';
+    font-size: .8em;
+    color: rgb(126, 126, 126);
+    font-weight: 700;
+
+
 }
