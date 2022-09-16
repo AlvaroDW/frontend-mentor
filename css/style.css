@@ -12,10 +12,13 @@
     font-weight: 700;
 }
 
-
+body {
+    margin: 0px;
+    padding: 0px;
+}
 
 .attribution {
-    font-size: 11px;
+    font-size: .7rem;
     text-align: center;
     padding: 5px;
 }
@@ -36,7 +39,7 @@ div.product-category {
     letter-spacing: 5px;
     color: rgb(126, 126, 126);
     font-weight: bolder;
-    font-size: .7em;
+    font-size: .7rem;
 
 }
 
@@ -51,9 +54,9 @@ div.product-category {
 }
 
 p {
-    font-size: .9em;
+    font-size: .9rem;
     inline-size: 17em;
-    margin-top: 0;
+    margin-top: .1em;
     font-family: 'Montserrat';
     color: rgb(90, 90, 90);
     line-height: 1.56em;
@@ -61,7 +64,7 @@ p {
 }
 
 img {
-    height: 48vh;
+    height: 48.5vh;
     border-radius: 10px 0px 0px 10px;
 }
 
@@ -87,14 +90,17 @@ button {
     height: 100vh;
     border-radius: 5px;
     /*margin: 0 auto;*/
+    display: flex;
+    flex-direction: column;
 }
 
 .inner-container {
     display: flex;
     background-color: white;
-    width: 45vw;
-    height: 48vh;
+    width: 46.5vw;
+    height: 48.5vh;
     margin: 0 auto;
+    margin-top: 50%;
     border-radius: 10px;
 }
 
@@ -106,6 +112,7 @@ button {
     margin: 34px;
     margin-left: 30px;
     justify-content: flex-start;
+
 }
 
 .product-price {
@@ -129,15 +136,64 @@ span {
 span:nth-child(1) {
     font-family: 'Fraunces';
     color: hsl(158, 36%, 37%);
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 span:nth-child(2) {
     font-family: 'Montserrat';
-    font-size: .8em;
+    font-size: .8rem;
     color: rgb(126, 126, 126);
     font-weight: 700;
     text-decoration: line-through;
 
 
+}
+
+/*** MOBILE FIRST CSS DESIGN ***/
+@media (min-width: 375px) {
+    img {
+        height: 28.5vh;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .inner-container {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 93vw;
+        height: 77vh;
+        margin: 0 auto;
+        margin-top: 5vh;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .divDescription {
+        display: flex;
+        flex-flow: column;
+        margin: 34px;
+        margin-left: 30px;
+        justify-content: flex-start;
+
+    }
+
+    .divButton {
+        display: flex;
+        justify-content: center;
+
+    }
+
+
+    button {
+        padding: 16px 64px;
+        /*background-color: hsl(155, 32%, 38%);*/
+        background-color: hsl(158, 36%, 37%);
+        border: none;
+        color: white;
+        border-radius: 5px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        display: flex;
+        column-gap: 11px;
+    }
 }
